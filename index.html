@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fashion Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Fashion Club - Watches and Handbags" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- //font -->
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all" />
+</head>
+
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div class="col-md-6 logo-w3 ">
+                <a href="#"><img src="images/logo2.png" alt=" " />
+                    <h3>FASHION<span>CLUB</span></h3>
+                </a>
+            </div>
+            <div class="col-md-6 phone-w3l">
+                <ul>
+                    <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
+                    <li>+18045403380</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="header-bottom-w3ls">
+        <div class="container">
+            <div class="col-md-7 navigation-agileits">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header nav_2">
+                        <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                        <ul class="nav navbar-nav ">
+                            <li class=""><a href="#" data-type="wacthes" class="hyper filter"><span>Home</span></a></li>
+
+                            <li class="dropdown ">
+                                <a href="#" class="dropdown-toggle hyper " data-toggle="dropdown"><span> Category<b class="caret"></b></span></a>
+                                <ul class="dropdown-menu multi multi1">
+                                    <div class="row">
+
+                                        <div class="col-sm-4">
+                                            <ul class="multi-column-dropdown">
+                                                <li><a data-type="handbag" href="#" class="filter"><i class="fa fa-angle-right" aria-hidden="true"></i>Handbags</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-sm-4 w3l">
+                                            <a href="#"><img src="images/hp3.jpg" class="img-responsive" alt=""></a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-4 search-agileinfo">
+                <form action="#" method="post">
+                    <input type="search" id="product_name" name="Search" placeholder="Search for a Product..." required="">
+                    <button onClick="searchProduct()" type="button" class="btn btn-default search" aria-label="Left Align">
+					<i class="fa fa-search" aria-hidden="true"> </i>
+				</button>
+                </form>
+            </div>
+            <div class="col-md-1 cart-wthree">
+                <div class="cart">
+                    <form action="#" method="post" class="last">
+                        <input type="hidden" name="cmd" value="_cart" />
+                        <input type="hidden" name="display" value="1" />
+                        <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <button id="clr_btn" class="btn hidden btn-xs btn-danger" onClick="clearAllFilters()">Clear searches</button>
+            <div class="" id="filters_selected"> </div>
+
+            <div class="col-md-4 w3ls_dresses_grid_left">
+
+                <div class="w3ls_dresses_grid_left_grid">
+                    <h3>Price</h3>
+                    <div class="w3ls_dresses_grid_left_grid_sub">
+                        <div class="ecommerce_color ecommerce_size">
+                            <ul>
+                                <li><a class="price-filter" data-type='price' data-val='100' href="#">Less Than $100</a></li>
+                                <li><a class="price-filter" data-type='price' data-val='200' href="#">Less Than $200</a></li>
+                                <li><a class="price-filter" data-type='price' data-val='300' href="#">Less Than $300</a></li>
+                                <li><a class="price-filter" data-type='price' data-val='500' href="#">Less Than $500</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3ls_dresses_grid_left_grid">
+                    <h3>Categories</h3>
+                    <div class="w3ls_dresses_grid_left_grid_sub">
+                        <div class="ecommerce_dres-type">
+                            <ul>
+                                <li><a class="attr-filter" data-type='type' data-val='leather' href="#">Leather strap</a></li>
+                                <li><a class="attr-filter" data-type='type' data-val='steel' href="#">Steel strap</a></li>
+                                <li><a class="attr-filter" data-type='type' data-val='chain' href="#">Chain type</a></li>
+                                <li><a class="attr-filter" data-type='type' data-val='iron' href="#">Iron strap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3ls_dresses_grid_left_grid">
+                    <h3>Color</h3>
+                    <div class="w3ls_dresses_grid_left_grid_sub">
+                        <div class="ecommerce_color">
+                            <ul>
+                                <li><a class="attr-filter" data-type='color' data-val='red' href="#"><i></i> Red</a></li>
+                                <li><a class="attr-filter" data-type='color' data-val='brown' href="#"><i></i> Brown</a></li>
+                                <li><a class="attr-filter" data-type='color' data-val='yellow' href="#"><i></i> Yellow</a></li>
+                                <li><a class="attr-filter" data-type='color' data-val='violet' href="#"><i></i> Violet</a></li>
+                                <li><a class="attr-filter" data-type='color' data-val='orange' href="#"><i></i> Orange</a></li>
+                                <li><a class="attr-filter" data-type='color' data-val='blue' href="#"><i></i> Blue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3ls_dresses_grid_left_grid">
+                    <h3>Size</h3>
+                    <div class="w3ls_dresses_grid_left_grid_sub">
+                        <div class="ecommerce_color ecommerce_size">
+                            <ul>
+                                <li><a class="attr-filter" data-type='size' data-val='medium' href="#">Medium</a></li>
+                                <li><a class="attr-filter" data-type='size' data-val='large' href="#">Large</a></li>
+                                <li><a class="attr-filter" data-type='size' data-val='extra-large' href="#">Extra Large</a></li>
+                                <li><a class="attr-filter" data-type='size' data-val='small' href="#">Small</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3ls_dresses_grid_left_grid">
+                    <h3>Ratings</h3>
+                    <div class="w3ls_dresses_grid_left_grid_sub">
+                        <div class="ecommerce_dres-type">
+                            <ul>
+                                <li>
+                                    <a class="attr-filter" data-type='rating' data-val='5' href="#">
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i> 5
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="attr-filter" data-type='rating' data-val='4' href="#">
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i> 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="attr-filter" data-type='rating' data-val='3' href="#">
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i> 3
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="attr-filter" data-type='rating' data-val='2' href="#">
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i> 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="attr-filter" data-type='rating' data-val='1' href="#">
+                                        <i class="fa fa-star yellow-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star gray-star" aria-hidden="true"></i> 1
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8 women-dresses" id="products_list">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="col-md-3 footer-grids fgd1">
+                <a href="#"><img src="images/logo2.png" alt=" " />
+                    <h3>FASHION<span>CLUB</span></h3>
+                </a>
+                <ul>
+                    <li>1234k Avenue, 4th block,</li>
+                    <li>New York City.</li>
+                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+            <p class="copy-right"><strong>&copy 2019 FashionClub.com, L.P. All rights reserved.</strong></p>
+            <p>FashionClub.com trademarks or registered trademarks of OutErra.com, LP in the Canada and/or other countries. All other trademarks are property of their respective owners.</p>
+        </div>
+    </div>
+
+</body>
+<script src="js/index.js"></script>
+
+</html>
